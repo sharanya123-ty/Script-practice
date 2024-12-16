@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Loop through numbers from 1 to 100
+for ((i = 1; i <= 100; i++))
+do
+  # Check if the number is odd
+  if ((i % 2 != 0))
+  then
+    echo "The odd numbers are: $i"
+  fi
+done
+
+#!/bin/bash
+
+for ((i=1; i<=100; i+=2))
+do
+echo $i
+
+#!/bin/bash
+echo "Enter the range"
+read range
+number=1
+echo "Odd numbers from 1 to $range:"
+while [ $number -le $range ]
+do
+    echo $number
+    number=$((number + 2))
+done
